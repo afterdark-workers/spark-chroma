@@ -1,6 +1,6 @@
 # SPARK.Chroma v1 — RunPod Serverless worker
 
-A ready-to-build [RunPod Serverless](https://runpod.io?ref=qpguwapm) worker for **SPARK.Chroma v1** by SG161222 (the RealVis author) — a photorealistic Chroma1 fine-tune (Apache 2.0). Based on the official [`runpod/worker-comfyui`](https://github.com/runpod-workers/worker-comfyui).
+A ready-to-build [RunPod Serverless](https://runpod.io?ref=qpguwapm) worker for **[SPARK.Chroma v1](https://huggingface.co/SG161222/SPARK.Chroma_v1)** by SG161222 (the RealVis author) — a photorealistic Chroma1 fine-tune (Apache 2.0). Based on the official [`runpod/worker-comfyui`](https://github.com/runpod-workers/worker-comfyui).
 
 Models are baked into the image, so a cold start does not re-download anything.
 
@@ -10,9 +10,9 @@ Models are baked into the image, so a cold start does not re-download anything.
 
 | File | Source | Size |
 |---|---|---|
-| `diffusion_models/SPARK.Chroma_v1_1024.safetensors` | SG161222/SPARK.Chroma_v1 (Apache 2.0) | 17.8 GB |
-| `text_encoders/t5xxl_fp8_e4m3fn.safetensors` | comfyanonymous/flux_text_encoders | 4.9 GB |
-| `vae/ae.safetensors` | Comfy-Org repack (FLUX VAE) | 0.3 GB |
+| `diffusion_models/SPARK.Chroma_v1_1024.safetensors` | [SG161222/SPARK.Chroma_v1](https://huggingface.co/SG161222/SPARK.Chroma_v1) (Apache 2.0) | 17.8 GB |
+| `text_encoders/t5xxl_fp8_e4m3fn.safetensors` | [comfyanonymous/flux_text_encoders](https://huggingface.co/comfyanonymous/flux_text_encoders) | 4.9 GB |
+| `vae/ae.safetensors` | [Comfy-Org repack](https://huggingface.co/Comfy-Org/Lumina-Image-2) (FLUX VAE) | 0.3 GB |
 
 Just the model as its creator released it — no LoRAs, no extra nodes. All files are checked by SHA-256 at build time. The model is loaded in fp8 so it fits a 24 GB GPU.
 
